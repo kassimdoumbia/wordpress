@@ -1,0 +1,137 @@
+VOITURE : https://enzostvs-deepsite.hf.space/projects/kdoumbia/allassane
+---------
+Créer un site web pour un de vente de voiture qui s'appelle 'Alassane Mortors'.
+Créez plusieurs sections :
+- Voitures japonaises JAPON
+- Voitures allemandes ALLEMAGNE
+- Voitures africaines AFRQUE
+- Voitures américaines USA
+- Voiture haut de gamme ITALIE
+Dans chaque section crée une galerie de produits qui sont des voitures avec les photo des voitures et leurs prix
+- Ajouter les produits dans chaque section avec des voitures du pays de la section.
+- Prévoir d'intégrer google map avec l'adresse du concessionnaire à Houston Texas
+- Prévoir les liens de vers les réseaux sociaux, facebook, instagram
+Donner la possibilité de choisir plusieurs articles à mettre dabs le panier pour passer la commande.
+
+------------------------------------------------------------------------------------------------------------------------------------------
+
+FRIPERIE :
+----------
+créer un site web pour un magasin de friperie.
+Créer plusieurs sections :
+-Vêtement pour adulte
+-Vêtement pour enfant
+- Adultes Hiver
+- Enfants Hiver
+- Adultes été
+- Enfants été
+- Chaussures adultes
+- Chaussures enfants
+Dans chaque section crée une galerie de produits qui sont des vêtements avec leurs prix
+- Prévoir d'intégrer google map avec l'adresse de la friperie
+- Prévoir les liens de vers les réseaux sociaux, facebook, instagram
+Donner la possibilité de choisir plusieurs articles à mettre dabs le pannier pour passer la commande.
+
+------------------------------------------------------------------------------------------------------------------------------------------
+
+ASCI 01 : asci01_index.html.txt
+SPACE : https://huggingface.co/spaces/kdoumbia/asci01
+---------
+Crée un site web pour une association de militaires, le site web doit être moderne, attractif, adapté aux sites militaires, code sémantique propre pour le référencement, code responsive adapté à tout appareil, avec tailwind css et breakpoints, illustration via des images libres unsplash, design vibrant général 
+Le site web doit avoir avec les caractéristiques suivantes :
+- Titre du site Web : Association de Solidarité des Anciens Combattants Interethniques
+- Créer un en-tête qui fasse 1/5 de la page
+- Créer un  bas de page qui fasse 1/5 de la page
+- Toutes les pages doivent avoir un background avec le Drapeau Français
+- La page d'accueil doit avoir le logo avec le fichier logo_asci.jpg
+- Prévoir d'intégrer google map avec l'adresse de l'association à Paris France
+- Prévoir les liens vers les réseaux sociaux
+Créer plusieurs sections comme suit et prévoir des sous-section pour chaque section :
+- Accueil
+- À propos
+- Notre mission
+- Événements
+- Constact
+- Adhésion
+- Photos
+- Vidéos
+- Histoire
+- Régiments
+- Membres
+Dans la section Photos créer une galerie de photos avec des photos de militaires de différentes époques
+Dans la section Vidéos créer une galerie de vidéos avec des vidéos youtube de militaires ou de l'armée
+Dans les contenu des sections répliquer le site dont l'url est dans le redesign
+
+------------------------------------------------------------------------------------------------------------------------------------------
+
+ASCI 02 : asci01_index.html.txt
+---------
+Crée un website en langue=français pour une association de militaires, le site web doit être moderne, attractif, adapté aux sites militaires, code sémantique propre pour le référencement, code responsive adapté à tout appareil, avec tailwind css et breakpoints, illustration via des images représentant des militaires en uniforme de toutes les époques depuis la deuxième guerre mondiale, design vibrant général 
+Le site web doit avoir avec les caractéristiques suivantes :
+- Titre du site Web : ASCI
+- Ajouter un logo au centre de la page d'accueil avec une taille assez grande, choisir un logo militaire
+- Texte à afficher au milieu de la page d'accueil au dessus du logo : Association de Solidarité des Anciens Combattants Interethniques
+- Créer un haut de page qui fasse 1/5 de la page principale
+- Créer un  bas de page qui fasse 1/5 de la page principale
+- Toutes les pages doivent avoir un background avec le Drapeau Français
+- Prévoir d'intégrer google map avec l'adresse de l'association à Paris France
+- Prévoir les liens vers les réseaux sociaux
+Créer plusieurs sections comme suit :
+- Accueil
+- À propos
+- Notre mission
+- Produits
+- Événements
+- Adhésion
+- Photos
+- Vidéos
+- Histoire
+- Régiments
+- Membres
+Dans la section Photos créer une galerie de photos avec des photos de militaires de différentes époques
+Dans la section Vidéos créer une galerie de vidéos avec des vidéos YouTube de militaires ou de l'armée
+Dans la section Produits crée une galerie de produits qui sont des vêtements avec leurs prix
+	Donner la possibilité de choisir plusieurs Produits à mettre dans le panier pour passer la commande
+	Donner la possibilité de supprimer des Produits du panier
+Dans la section Adhésion créer un formu8laire d'inscription avec les champs de données suivants :
+	- Nom
+	- Prénom
+	- Date de naissance
+	- Adresse
+	- Téléphone
+	- Courriel
+	- Statut : liste déroulante avec 5 options : - Militaire en activité - Ancien militaire - Sympathisant civil - Membre civil - Autre
+	- Motivation pour adhérer
+	- Cotisation annuelle (EURO)
+	- Date d'adhésion
+Dans la section Histoire ajouter le texte ci dessous :
+	- 11 mars : Journée nationale d’hommage aux victimes du terrorisme
+	- 19 mars : Journée nationales du souvenir et de recueillement à la mémoire des victimes civiles et militaires de la guerre d’Algérie et des combats en Tunisie et au Maroc.
+	- 7 avril : Commémoration annuelle du génocide des Tutsi
+	- Dernier dimanche d’Avril : Journée nationale du souvenir des victimes et des héros de la Déportation
+	- 8 mai : Commémoration de la victoire du 8 Mai 1945
+	- 10 mai : Commémoration annuelle en France métropolitaine de l’abolition de l’esclavage
+	- Deuxième dimanche de mai : Fête nationale de Jeanne d’Arc, fete du patriotisme
+	- 23 mai : Journée nationales en hommage aux victimes de l’esclavage
+	- 27 mai : Journée nationale de la Résistance
+	- 8 juin : Journée nationale d’hommage aux « morts pour la France » en Indochine
+	- 18 juin : Journée nationale commémorative de l’appel du général de Gaulle, le 18 Juin 1940, à refuser la défaite et à poursuivre le combat contre l’ennemi
+	- 14 juillet : Fete nationale
+	- 16 Juillet ou Dimanche qui suit : Journée nationale a la mémoire des victimes des crimes racistes et antisémites de l’État français et d’hommage aux « Justes » de France
+	- 25 septembre : Journée nationale d’hommage aux Harkis et autres membres des formations supplétives
+	- 11 novembre : Commémoration de la victoire et de la Paix, jour de l’anniversaire de l’armistice du 11 Novembre 1918 et hommage rendu à tous les morts pour la France.
+	- 5 décembre : Journée nationale d’hommage aux « morts pour la France » pendant la guerre d’Algérie et les combats du Maroc et de la Tunisie.
+
+------------------------------------------------------------------------------------------------------------------------------------------
+
+IMAGE PAGE ACCUEIL :
+--------------------
+Faire une image avec plusieurs photos de militaires de différentes races avec des uniformes français et des et bérets de plusieurs couleurs des différentes armes de l'armée de terre : police, pompiers, tirailleurs, chasseurs alpin, légionnaire, parachutistes. Les photos des militaires doivent apparaître  alignés  comme les uns derrières les autres mais sous forme de V.
+---------------------------------------------------------------Couleurs des bérêts en plus---------------------------------------------------------------------
+Faire une image avec plusieurs photos de militaires de différentes races avec des uniformes français et des et bérets de plusieurs couleurs, bleue, noir, rouge, vert des différentes armes de l'armée de terre : police, pompiers, tirailleurs, chasseurs alpin, légionnaire, parachutistes. Les photos des militaires doivent apparaître  alignés  comme les uns derrières les autres mais sous forme de V.
+-----------------------------------------------------------------Nombre de soldats en plus--------------------------------------------------------
+Faire une image avec plusieurs photos de militaires de différentes races avec des uniformes français et des et bérets de plusieurs couleurs, bleue, noir, rouge, vert des différentes armes de l'armée de terre : police, pompiers, tirailleurs, chasseurs alpin, légionnaire, parachutistes. Les photos des militaires doivent apparaître  alignés  comme les uns derrières les autres mais sous forme de V avec un soldat noir au centre et 3 soldats de chaque côté du V.
+---------------------------------------------------Nombre de soldats en plus et couleurs de bérêts--------------------------------------------------------
+Faire une image avec plusieurs photos de militaires de différentes races avec des uniformes français et des et bérets de plusieurs couleurs, bleue, noir, vert, rouge. Les photos des militaires doivent apparaître  alignés  comme les uns derrières les autres mais sous forme de V avec un soldat noir au centre et 4 soldats de chaque côté du V.
+------------------------------------------------------------------------------------------------------------------------------------------
+Choix : 01, 03. 05, 06, 08, 09, 10, 13, 14, 15, 16, 17, 18, 20

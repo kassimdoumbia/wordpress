@@ -1,0 +1,321 @@
+```html
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASCI - Association de Solidarité des Anciens Combattants Interethniques</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><rect width="33.3" height="100" fill="%23005BA1"/><rect x="33.3" width="33.3" height="100" fill="white"/><rect x="66.6" width="33.4" height="100" fill="%23EF4135"/></svg>');
+            background-size: 300px 200px;
+            background-attachment: fixed;
+            background-blend-mode: overlay;
+            background-color: rgba(255, 255, 255, 0.9);
+        }
+        .fade-in {
+            animation: fadeIn 1.5s;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        .section-hidden {
+            display: none;
+        }
+        .gallery-item {
+            transition: transform 0.3s ease;
+        }
+        .gallery-item:hover {
+            transform: scale(1.03);
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col">
+    <!-- Header -->
+    <header class="h-1/5 min-h-[120px] bg-gradient-to-r from-blue-900 via-white to-red-600 text-white shadow-lg">
+        <nav class="container mx-auto px-4 py-3">
+            <div class="flex flex-wrap justify-between items-center">
+                <div class="text-2xl font-bold text-blue-900">ASCI</div>
+                
+                <div class="md:hidden">
+                    <button id="menu-toggle" class="text-blue-900">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+                
+                <div id="menu-items" class="hidden md:flex md:items-center w-full md:w-auto mt-4 md:mt-0">
+                    <ul class="md:flex space-y-2 md:space-y-0 md:space-x-4 text-blue-900 font-semibold">
+                        <li><a href="#" class="nav-link hover:text-red-600 active" data-section="accueil">Accueil</a></li>
+                        <li><a href="#" class="nav-link hover:text-red-600" data-section="apropos">À propos</a></li>
+                        <li><a href="#" class="nav-link hover:text-red-600" data-section="mission">Notre mission</a></li>
+                        <li><a href="#" class="nav-link hover:text-red-600" data-section="evenements">Événements</a></li>
+                        <li><a href="#" class="nav-link hover:text-red-600" data-section="adhesion">Adhésion</a></li>
+                        <li><a href="#" class="nav-link hover:text-red-600" data-section="photos">Photos</a></li>
+                        <li><a href="#" class="nav-link hover:text-red-600" data-section="videos">Vidéos</a></li>
+                        <li><a href="#" class="nav-link hover:text-red-600" data-section="histoire">Histoire</a></li>
+                        <li><a href="#" class="nav-link hover:text-red-600" data-section="regiments">Régiments</a></li>
+                        <li><a href="#" class="nav-link hover:text-red-600" data-section="membres">Membres</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="flex-grow container mx-auto px-4 py-8">
+        <!-- Section Accueil -->
+        <section id="accueil" class="section fade-in text-center">
+            <h1 class="text-3xl md:text-4xl font-bold text-blue-900 mb-6">Association de Solidarité des Anciens Combattants Interethniques</h1>
+            <div class="flex justify-center mb-12">
+                <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='200' height='200' viewBox='0 0 200 200'><rect x='25' y='40' width='150' height='120' fill='%23333' rx='10'/><circle cx='100' cy='70' r='30' fill='%23D4AF37'/><polygon points='100,110 70,50 130,50' fill='%23D4AF37'/></svg>" 
+                     alt="Logo ASCI" class="w-48 h-48 md:w-64 md:h-64">
+            </div>
+            <div class="bg-white bg-opacity-90 p-6 rounded-lg shadow-lg max-w-3xl mx-auto">
+                <h2 class="text-2xl font-bold text-blue-900 mb-4">Bienvenue à l'ASCI</h2>
+                <p class="text-gray-700 mb-4">
+                    L'Association de Solidarité des Anciens Combattants Interethniques (ASCI) œuvre pour la reconnaissance, 
+                    la mémoire et la solidarité entre tous ceux qui ont servi la France à travers les différentes époques.
+                </p>
+                <p class="text-gray-700">
+                    Notre association rassemble des militaires en activité, d'anciens militaires, et des citoyens engagés 
+                    pour préserver notre héritage commun et soutenir ceux qui ont donné une partie de leur vie pour la Nation.
+                </p>
+            </div>
+        </section>
+
+        <!-- Autres sections (initialement cachées) -->
+        <section id="apropos" class="section section-hidden">
+            <h2 class="text-3xl font-bold text-blue-900 mb-6 text-center">À propos de l'ASCI</h2>
+            <div class="bg-white bg-opacity-90 p-6 rounded-lg shadow-lg">
+                <p class="text-gray-700 mb-4">
+                    Fondée en 1995, l'ASCI a pour vocation de rassembler les anciens combattants de toutes origines 
+                    et de toutes confessions autour des valeurs républicaines et de la mémoire des conflits contemporains.
+                </p>
+                <p class="text-gray-700 mb-4">
+                    Notre association compte aujourd'hui plus de 2 500 membres à travers toute la France et 
+                    entretient des relations étroites avec les institutions militaires et mémorielles.
+                </p>
+                <p class="text-gray-700">
+                    Nous organisons régulièrement des cérémonies, des conférences et des actions de solidarité 
+                    envers les anciens combattants et leurs familles.
+                </p>
+            </div>
+        </section>
+
+        <section id="mission" class="section section-hidden">
+            <h2 class="text-3xl font-bold text-blue-900 mb-6 text-center">Notre mission</h2>
+            <div class="bg-white bg-opacity-90 p-6 rounded-lg shadow-lg">
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="p-4 border border-blue-200 rounded-lg">
+                        <h3 class="text-xl font-semibold text-blue-900 mb-2"><i class="fas fa-handshake mr-2"></i>Solidarité</h3>
+                        <p class="text-gray-700">Soutenir les anciens combattants et leurs familles dans leurs démarches et difficultés quotidiennes.</p>
+                    </div>
+                    <div class="p-4 border border-blue-200 rounded-lg">
+                        <h3 class="text-xl font-semibold text-blue-900 mb-2"><i class="fas fa-book mr-2"></i>Mémoire</h3>
+                        <p class="text-gray-700">Transmettre aux jeunes générations l'histoire et les valeurs des armées françaises.</p>
+                    </div>
+                    <div class="p-4 border border-blue-200 rounded-lg">
+                        <h3 class="text-xl font-semibold text-blue-900 mb-2"><i class="fas fa-users mr-2"></i>Rassemblement</h3>
+                        <p class="text-gray-700">Créer du lien entre les anciens combattants de toutes origines et de toutes générations.</p>
+                    </div>
+                    <div class="p-4 border border-blue-200 rounded-lg">
+                        <h3 class="text-xl font-semibold text-blue-900 mb-2"><i class="fas fa-flag mr-2"></i>Patriotisme</h3>
+                        <p class="text-gray-700">Promouvoir l'amour de la patrie et le respect de ses symboles et valeurs.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="adhesion" class="section section-hidden">
+            <h2 class="text-3xl font-bold text-blue-900 mb-6 text-center">Adhésion</h2>
+            <div class="bg-white bg-opacity-90 p-6 rounded-lg shadow-lg max-w-3xl mx-auto">
+                <form class="space-y-4">
+                    <div class="grid md:grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-gray-700 mb-2" for="nom">Nom</label>
+                            <input type="text" id="nom" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                        </div>
+                        <div>
+                            <label class="block text-gray-700 mb-2" for="prenom">Prénom</label>
+                            <input type="text" id="prenom" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <label class="block text-gray-700 mb-2" for="naissance">Date de naissance</label>
+                        <input type="date" id="naissance" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    </div>
+                    
+                    <div>
+                        <label class="block text-gray-700 mb-2" for="adresse">Adresse</label>
+                        <input type="text" id="adresse" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    </div>
+                    
+                    <div class="grid md:grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-gray-700 mb-2" for="telephone">Téléphone</label>
+                            <input type="tel" id="telephone" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                        </div>
+                        <div>
+                            <label class="block text-gray-700 mb-2" for="courriel">Courriel</label>
+                            <input type="email" id="courriel" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <label class="block text-gray-700 mb-2" for="statut">Statut</label>
+                        <select id="statut" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                            <option value="">Sélectionnez votre statut</option>
+                            <option value="actif">Militaire en activité</option>
+                            <option value="ancien">Ancien militaire</option>
+                            <option value="sympathisant">Sympathisant civil</option>
+                            <option value="civil">Membre civil</option>
+                            <option value="autre">Autre</option>
+                        </select>
+                    </div>
+                    
+                    <div>
+                        <label class="block text-gray-700 mb-2" for="motivation">Motivation pour adhérer</label>
+                        <textarea id="motivation" rows="3" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+                    </div>
+                    
+                    <div>
+                        <label class="block text-gray-700 mb-2" for="cotisation">Cotisation annuelle (EURO)</label>
+                        <input type="number" id="cotisation" min="0" step="5" value="30" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    </div>
+                    
+                    <div>
+                        <label class="block text-gray-700 mb-2" for="date-adhesion">Date d'adhésion</label>
+                        <input type="date" id="date-adhesion" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    </div>
+                    
+                    <div class="text-center">
+                        <button type="submit" class="px-6 py-3 bg-blue-900 text-white rounded-lg hover:bg-blue-800 transition duration-300">Soumettre ma demande d'adhésion</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <section id="photos" class="section section-hidden">
+            <h2 class="text-3xl font-bold text-blue-900 mb-6 text-center">Galerie Photos</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+                <!-- Placeholder pour les images militaires -->
+                <div class="gallery-item bg-gray-200 h-64 rounded-lg shadow-lg flex items-center justify-center">
+                    <span class="text-gray-500">Photo militaire WWII</span>
+                </div>
+                <div class="gallery-item bg-gray-300 h-64 rounded-lg shadow-lg flex items-center justify-center">
+                    <span class="text-gray-500">Photo militaire Guerre d'Algérie</span>
+                </div>
+                <div class="gallery-item bg-gray-400 h-64 rounded-lg shadow-lg flex items-center justify-center">
+                    <span class="text-gray-500">Photo militaire Moderne</span>
+                </div>
+                <div class="gallery-item bg-gray-300 h-64 rounded-lg shadow-lg flex items-center justify-center">
+                    <span class="text-gray-500">Cérémonie commémorative</span>
+                </div>
+                <div class="gallery-item bg-gray-400 h-64 rounded-lg shadow-lg flex items-center justify-center">
+                    <span class="text-gray-500">Anciens combattants</span>
+                </div>
+                <div class="gallery-item bg-gray-200 h-64 rounded-lg shadow-lg flex items-center justify-center">
+                    <span class="text-gray-500">Équipement militaire historique</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="histoire" class="section section-hidden">
+            <h2 class="text-3xl font-bold text-blue-900 mb-6 text-center">Journées commémoratives</h2>
+            <div class="bg-white bg-opacity-90 p-6 rounded-lg shadow-lg">
+                <ul class="space-y-4">
+                    <li class="border-l-4 border-blue-900 pl-4 py-2"><strong>11 mars :</strong> Journée nationale d'hommage aux victimes du terrorisme</li>
+                    <li class="border-l-4 border-blue-900 pl-4 py-2"><strong>19 mars :</strong> Journée nationale du souvenir et de recueillement à la mémoire des victimes civiles et militaires de la guerre d'Algérie et des combats en Tunisie et au Maroc.</li>
+                    <li class="border-l-4 border-blue-900 pl-4 py-2"><strong>7 avril :</strong> Commémoration annuelle du génocide des Tutsi</li>
+                    <li class="border-l-4 border-blue-900 pl-4 py-2"><strong>Dernier dimanche d'avril :</strong> Journée nationale du souvenir des victimes et des héros de la Déportation</li>
+                    <li class="border-l-4 border-blue-900 pl-4 py-2"><strong>8 mai :</strong> Commémoration de la victoire du 8 Mai 1945</li>
+                    <li class="border-l-4 border-blue-900 pl-4 py-2"><strong>10 mai :</strong> Commémoration annuelle en France métropolitaine de l'abolition de l'esclavage</li>
+                    <li class="border-l-4 border-blue-900 pl-4 py-2"><strong>Deuxième dimanche de mai :</strong> Fête nationale de Jeanne d'Arc, fête du patriotisme</li>
+                    <li class="border-l-4 border-blue-900 pl-4 py-2"><strong>23 mai :</strong> Journée nationale en hommage aux victimes de l'esclavage</li>
+                    <li class="border-l-4 border-blue-900 pl-4 py-2"><strong>27 mai :</strong> Journée nationale de la Résistance</li>
+                    <li class="border-l-4 border-blue-900 pl-4 py-2"><strong>8 juin :</strong> Journée nationale d'hommage aux « morts pour la France » en Indochine</li>
+                    <li class="border-l-4 border-blue-900 pl-4 py-2"><strong>18 juin :</strong> Journée nationale commémorative de l'appel du général de Gaulle, le 18 Juin 1940, à refuser la défaite et à poursuivre le combat contre l'ennemi</li>
+                    <li class="border-l-4 border-blue-900 pl-4 py-2"><strong>14 juillet :</strong> Fête nationale</li>
+                    <li class="border-l-4 border-blue-900 pl-4 py-2"><strong>16 Juillet ou dimanche qui suit :</strong> Journée nationale à la mémoire des victimes des crimes racistes et antisémites de l'État français et d'hommage aux « Justes » de France</li>
+                    <li class="border-l-4 border-blue-900 pl-4 py-2"><strong>25 septembre :</strong> Journée nationale d'hommage aux Harkis et autres membres des formations supplétives</li>
+                    <li class="border-l-4 border-blue-900 pl-4 py-2"><strong>11 novembre :</strong> Commémoration de la victoire et de la Paix, jour de l'anniversaire de l'armistice du 11 Novembre 1918 et hommage rendu à tous les morts pour la France.</li>
+                    <li class="border-l-4 border-blue-900 pl-4 py-2"><strong>5 décembre :</strong> Journée nationale d'hommage aux « morts pour la France » pendant la guerre d'Algérie et les combats du Maroc et de la Tunisie.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Autres sections (À propos, Notre mission, Événements, Vidéos, Régiments, Membres) -->
+        <!-- Le code pour ces sections suivrait le même modèle -->
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="h-1/5 min-h-[150px] bg-gradient-to-r from-blue-900 via-white to-red-600 text-blue-900 py-6">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <h3 class="text-lg font-bold">ASCI</h3>
+                    <p>Association de Solidarité des Anciens Combattants Interethniques</p>
+                    <p>123 Avenue de la Nation, 75011 Paris, France</p>
+                    <p>Tél: +33 1 23 45 67 89</p>
+                </div>
+                
+                <div class="mb-4 md:mb-0">
+                    <h4 class="text-lg font-bold mb-2">Suivez-nous</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-blue-900 hover:text-red-600"><i class="fab fa-facebook-f text-2xl"></i></a>
+                        <a href="#" class="text-blue-900 hover:text-red-600"><i class="fab fa-twitter text-2xl"></i></a>
+                        <a href="#" class="text-blue-900 hover:text-red-600"><i class="fab fa-instagram text-2xl"></i></a>
+                        <a href="#" class="text-blue-900 hover:text-red-600"><i class="fab fa-youtube text-2xl"></i></a>
+                    </div>
+                </div>
+                
+                <div>
+                    <div id="map" class="h-32 w-48 bg-gray-200 rounded-lg shadow-lg flex items-center justify-center">
+                        <span class="text-gray-500">Carte Google Maps</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-blue-900 mt-6 pt-4 text-center">
+                <p>&copy; 2023 ASCI - Tous droits réservés</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Navigation entre les sections
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                // Masquer toutes les sections
+                document.querySelectorAll('.section').forEach(section => {
+                    section.classList.add('section-hidden');
+                });
+                
+                // Afficher la section correspondante
+                const targetSection = this.getAttribute('data-section');
+                document.getElementById(targetSection).classList.remove('section-hidden');
+                
+                // Mettre à jour la classe active
+                document.querySelectorAll('.nav-link').forEach(link => {
+                    link.classList.remove('active');
+                });
+                this.classList.add('active');
+            });
+        });
+        
+        // Menu mobile
+        document.getElementById('menu-toggle').addEventListener('click', function() {
+            const menuItems = document.getElementById('menu-items');
+            menuItems.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
+```

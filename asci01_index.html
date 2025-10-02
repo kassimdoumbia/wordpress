@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Association de Solidarité des Anciens Combattants Interethniques</title>
+    <meta name="description" content="Association de soutien aux anciens combattants de toutes origines. Solidarité, mémoire et reconnaissance.">
+    <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <style>
+        .french-flag-bg {
+            background-image: url('https://upload.wikimedia.org/wikipedia/commons/6/62/Flag_of_France.png');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            background-blend-mode: overlay;
+            background-color: rgba(255, 255, 255, 0.9);
+        }
+        .hero-overlay {
+            background: linear-gradient(to right, rgba(0, 85, 164, 0.8), rgba(250, 60, 50, 0.8), rgba(255, 255, 255, 0.8));
+        }
+        .gallery-item {
+            transition: all 0.3s ease;
+        }
+        .gallery-item:hover {
+            transform: scale(1.03);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body class="french-flag-bg min-h-screen flex flex-col">
+    <!-- Header -->
+    <header class="h-1/5 min-h-[200px] bg-gray-900 text-white shadow-lg">
+        <div class="container mx-auto px-4 h-full flex flex-col justify-between">
+            <div class="flex items-center justify-between py-4">
+                <div class="flex items-center space-x-2">
+                    <i data-feather="shield" class="text-red-500"></i>
+                    <h1 class="text-xl md:text-2xl font-bold">Association de Solidarité<br>des Anciens Combattants Interethniques</h1>
+                </div>
+                <button class="md:hidden focus:outline-none" id="mobile-menu-button">
+                    <i data-feather="menu"></i>
+                </button>
+            </div>
+            <nav class="hidden md:block py-2">
+                <ul class="flex space-x-1 justify-between">
+                    <li><a href="index.html" class="px-4 py-2 bg-blue-700 rounded-t-lg hover:bg-blue-600 transition">Accueil</a></li>
+                    <li><a href="about.html" class="px-4 py-2 hover:bg-gray-700 rounded-t-lg transition">À propos</a></li>
+                    <li><a href="mission.html" class="px-4 py-2 hover:bg-gray-700 rounded-t-lg transition">Notre mission</a></li>
+                    <li><a href="events.html" class="px-4 py-2 hover:bg-gray-700 rounded-t-lg transition">Événements</a></li>
+                    <li><a href="contact.html" class="px-4 py-2 hover:bg-gray-700 rounded-t-lg transition">Contact</a></li>
+                    <li><a href="membership.html" class="px-4 py-2 hover:bg-gray-700 rounded-t-lg transition">Adhésion</a></li>
+                    <li><a href="gallery.html" class="px-4 py-2 hover:bg-gray-700 rounded-t-lg transition">Photos</a></li>
+                    <li><a href="videos.html" class="px-4 py-2 hover:bg-gray-700 rounded-t-lg transition">Vidéos</a></li>
+                    <li><a href="history.html" class="px-4 py-2 hover:bg-gray-700 rounded-t-lg transition">Histoire</a></li>
+                    <li><a href="regiments.html" class="px-4 py-2 hover:bg-gray-700 rounded-t-lg transition">Régiments</a></li>
+                    <li><a href="members.html" class="px-4 py-2 hover:bg-gray-700 rounded-t-lg transition">Membres</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden bg-gray-800 text-white">
+        <ul class="flex flex-col space-y-2 p-4">
+            <li><a href="index.html" class="block px-4 py-2 bg-blue-700 rounded-lg">Accueil</a></li>
+            <li><a href="about.html" class="block px-4 py-2 hover:bg-gray-700 rounded-lg">À propos</a></li>
+            <li><a href="mission.html" class="block px-4 py-2 hover:bg-gray-700 rounded-lg">Notre mission</a></li>
+            <li><a href="events.html" class="block px-4 py-2 hover:bg-gray-700 rounded-lg">Événements</a></li>
+            <li><a href="contact.html" class="block px-4 py-2 hover:bg-gray-700 rounded-lg">Contact</a></li>
+            <li><a href="membership.html" class="block px-4 py-2 hover:bg-gray-700 rounded-lg">Adhésion</a></li>
+            <li><a href="gallery.html" class="block px-4 py-2 hover:bg-gray-700 rounded-lg">Photos</a></li>
+            <li><a href="videos.html" class="block px-4 py-2 hover:bg-gray-700 rounded-lg">Vidéos</a></li>
+            <li><a href="history.html" class="block px-4 py-2 hover:bg-gray-700 rounded-lg">Histoire</a></li>
+            <li><a href="regiments.html" class="block px-4 py-2 hover:bg-gray-700 rounded-lg">Régiments</a></li>
+            <li><a href="members.html" class="block px-4 py-2 hover:bg-gray-700 rounded-lg">Membres</a></li>
+        </ul>
+    </div>
+
+    <!-- Main Content -->
+    <main class="flex-grow container mx-auto px-4 py-8">
+        <section class="hero mb-12 rounded-xl overflow-hidden shadow-2xl">
+            <div class="hero-overlay h-96 flex items-center justify-center text-white text-center p-8">
+                <div data-aos="fade-up">
+                    <h2 class="text-4xl md:text-5xl font-bold mb-4">Solidarité, Mémoire, Reconnaissance</h2>
+                    <p class="text-xl mb-6">Unis dans la diversité, fidèles à nos valeurs</p>
+                    <a href="membership.html" class="bg-red-600 hover:bg-red-700 text-white font-bold py-3 px-6 rounded-full transition duration-300 inline-flex items-center">
+                        Rejoignez-nous <i data-feather="arrow-right" class="ml-2"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-16" data-aos="fade-up">
+            <h2 class="text-3xl font-bold text-center mb-8 text-gray-800 border-b-2 border-blue-700 pb-2 inline-block">Nos Dernières Actualités</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <article class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition duration-300">
+                    <img src="https://source.unsplash.com/random/600x400/?military,ceremony" alt="Cérémonie militaire" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Cérémonie du 11 Novembre</h3>
+                        <p class="text-gray-600 mb-4">Participation de notre association à la commémoration de l'Armistice.</p>
+                        <a href="#" class="text-blue-600 hover:underline flex items-center">
+                            Lire plus <i data-feather="arrow-right" class="ml-1 w-4 h-4"></i>
+                        </a>
+                    </div>
+                </article>
+                <article class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition duration-300">
+                    <img src="https://source.unsplash.com/random/600x400/?veterans,meeting" alt="Réunion d'anciens combattants" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Assemblée Générale 2023</h3>
+                        <p class="text-gray-600 mb-4">Retour sur notre assemblée générale annuelle et les projets à venir.</p>
+                        <a href="#" class="text-blue-600 hover:underline flex items-center">
+                            Lire plus <i data-feather="arrow-right" class="ml-1 w-4 h-4"></i>
+                        </a>
+                    </div>
+                </article>
+                <article class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition duration-300">
+                    <img src="https://source.unsplash.com/random/600x400/?military,history" alt="Exposition historique" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Exposition Itinérante</h3>
+                        <p class="text-gray-600 mb-4">Notre exposition sur les régiments coloniaux fait étape à Lyon.</p>
+                        <a href="#" class="text-blue-600 hover:underline flex items-center">
+                            Lire plus <i data-feather="arrow-right" class="ml-1 w-4 h-4"></i>
+                        </a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="mb-16 bg-white rounded-xl shadow-lg p-8" data-aos="fade-up">
+            <div class="grid md:grid-cols-2 gap-8 items-center">
+                <div>
+                    <h2 class="text-3xl font-bold mb-4 text-gray-800">Notre Mission</h2>
+                    <p class="text-gray-600 mb-4">L'Association de Solidarité des Anciens Combattants Interethniques œuvre depuis 1985 pour préserver la mémoire des combattants de toutes origines qui ont servi la France.</p>
+                    <p class="text-gray-600 mb-6">Nous accompagnons nos membres dans leurs démarches administratives, organisons des événements commémoratifs et développons des actions de transmission auprès des jeunes générations.</p>
+                    <a href="mission.html" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-6 rounded-full transition duration-300 inline-flex items-center">
+                        En savoir plus <i data-feather="info" class="ml-2"></i>
+                    </a>
+                </div>
+                <div class="relative h-80">
+                    <img src="https://source.unsplash.com/random/600x400/?veteran,portrait" alt="Portrait d'ancien combattant" class="rounded-lg w-full h-full object-cover">
+                    <div class="absolute -bottom-4 -right-4 bg-red-600 text-white p-4 rounded-lg shadow-lg">
+                        <i data-feather="award" class="w-8 h-8"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-16" data-aos="fade-up">
+            <h2 class="text-3xl font-bold text-center mb-8 text-gray-800 border-b-2 border-blue-700 pb-2 inline-block">Prochains Événements</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="bg-white rounded-lg shadow-md overflow-hidden border-l-4 border-blue-600">
+                    <div class="p-6">
+                        <div class="flex items-center mb-3">
+                            <div class="bg-blue-100 text-blue-800 p-2 rounded-lg mr-4">
+                                <i data-feather="calendar" class="w-6 h-6"></i>
+                            </div>
+                            <div>
+                                <span class="block text-sm text-gray-500">15 Novembre 2023</span>
+                                <h3 class="font-bold text-lg">Conférence sur les Tirailleurs</h3>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 mb-4">Une soirée dédiée à l'histoire des régiments de tirailleurs avec des historiens spécialisés.</p>
+                        <a href="#" class="text-blue-600 hover:underline flex items-center text-sm">
+                            Plus d'informations <i data-feather="chevron-right" class="ml-1 w-4 h-4"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-md overflow-hidden border-l-4 border-red-600">
+                    <div class="p-6">
+                        <div class="flex items-center mb-3">
+                            <div class="bg-red-100 text-red-800 p-2 rounded-lg mr-4">
+                                <i data-feather="calendar" class="w-6 h-6"></i>
+                            </div>
+                            <div>
+                                <span class="block text-sm text-gray-500">5 Décembre 2023</span>
+                                <h3 class="font-bold text-lg">Cérémonie Interethnique</h3>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 mb-4">Commémoration annuelle honorant les combattants de toutes origines au Panthéon.</p>
+                        <a href="#" class="text-blue-600 hover:underline flex items-center text-sm">
+                            Plus d'informations <i data-feather="chevron-right" class="ml-1 w-4 h-4"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-md overflow-hidden border-l-4 border-yellow-600">
+                    <div class="p-6">
+                        <div class="flex items-center mb-3">
+                            <div class="bg-yellow-100 text-yellow-800 p-2 rounded-lg mr-4">
+                                <i data-feather="calendar" class="w-6 h-6"></i>
+                            </div>
+                            <div>
+                                <span class="block text-sm text-gray-500">20 Janvier 2024</span>
+                                <h3 class="font-bold text-lg">Voyage Mémoriel</h3>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 mb-4">Pèlerinage sur les lieux de mémoire de la Première Guerre mondiale en Alsace.</p>
+                        <a href="#" class="text-blue-600 hover:underline flex items-center text-sm">
+                            Plus d'informations <i data-feather="chevron-right" class="ml-1 w-4 h-4"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="h-1/5 min-h-[200px] bg-gray-900 text-white py-8">
+        <div class="container mx-auto px-4 h-full">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Association ASCI</h3>
+                    <p class="text-gray-400">Solidarité, Mémoire, Reconnaissance depuis 1985.</p>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Navigation</h4>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-400 hover:text-white transition">Accueil</a></li>
+                        <li><a href="about.html" class="text-gray-400 hover:text-white transition">À propos</a></li>
+                        <li><a href="events.html" class="text-gray-400 hover:text-white transition">Événements</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-white transition">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Contact</h4>
+                    <address class="not-italic text-gray-400">
+                        <p>12 Rue des Combattants</p>
+                        <p>75015 Paris, France</p>
+                        <p class="mt-2">Tél: +33 1 45 67 89 10</p>
+                        <p>Email: contact@anciens-combattants.fr</p>
+                    </address>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Suivez-nous</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition" aria-label="Facebook">
+                            <i data-feather="facebook"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition" aria-label="Twitter">
+                            <i data-feather="twitter"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition" aria-label="Instagram">
+                            <i data-feather="instagram"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition" aria-label="YouTube">
+                            <i data-feather="youtube"></i>
+                        </a>
+                    </div>
+                    <div class="mt-4">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.9916256937595!2d2.292292615509614!3d48.858370079287475!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e2964e34e2d%3A0x8ddca9ee380ef7e0!2sTour%20Eiffel!5e0!3m2!1sfr!2sfr!4v1623251234567!5m2!1sfr!2sfr" width="100%" height="150" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-6 text-center text-gray-500 text-sm">
+                <p>© 2023 Association de Solidarité des Anciens Combattants Interethniques. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true
+        });
+        feather.replace();
+        
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>

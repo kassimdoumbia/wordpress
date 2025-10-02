@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>À propos - Association des Anciens Combattants</title>
+    <meta name="description" content="Découvrez l'histoire et les valeurs de notre association d'anciens combattants interethniques.">
+    <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <style>
+        .french-flag-bg {
+            background-image: url('https://upload.wikimedia.org/wikipedia/commons/6/62/Flag_of_France.png');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            background-blend-mode: overlay;
+            background-color: rgba(255, 255, 255, 0.9);
+        }
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -38px;
+            top: 0;
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            background: #3b82f6;
+            border: 3px solid #1d4ed8;
+        }
+    </style>
+</head>
+<body class="french-flag-bg min-h-screen flex flex-col">
+    <!-- Header -->
+    <header class="h-1/5 min-h-[200px] bg-gray-900 text-white shadow-lg">
+        <div class="container mx-auto px-4 h-full flex flex-col justify-between">
+            <div class="flex items-center justify-between py-4">
+                <div class="flex items-center space-x-2">
+                    <i data-feather="shield" class="text-red-500"></i>
+                    <h1 class="text-xl md:text-2xl font-bold">Association de Solidarité<br>des Anciens Combattants Interethniques</h1>
+                </div>
+                <button class="md:hidden focus:outline-none" id="mobile-menu-button">
+                    <i data-feather="menu"></i>
+                </button>
+            </div>
+            <nav class="hidden md:block py-2">
+                <ul class="flex space-x-1 justify-between">
+                    <li><a href="index.html" class="px-4 py-2 hover:bg-gray-700 rounded-t-lg transition">Accueil</a></li>
+                    <li><a href="about.html" class="px-4 py-2 bg-blue-700 rounded-t-lg hover:bg-blue-600 transition">À propos</a></li>
+                    <li><a href="mission.html" class="px-4 py-2 hover:bg-gray-700 rounded-t-lg transition">Notre mission</a></li>
+                    <li><a href="events.html" class="px-4 py-2 hover:bg-gray-700 rounded-t-lg transition">Événements</a></li>
+                    <li><a href="contact.html" class="px-4 py-2 hover:bg-gray-700 rounded-t-lg transition">Contact</a></li>
+                    <li><a href="membership.html" class="px-4 py-2 hover:bg-gray-700 rounded-t-lg transition">Adhésion</a></li>
+                    <li><a href="gallery.html" class="px-4 py-2 hover:bg-gray-700 rounded-t-lg transition">Photos</a></li>
+                    <li><a href="videos.html" class="px-4 py-2 hover:bg-gray-700 rounded-t-lg transition">Vidéos</a></li>
+                    <li><a href="history.html" class="px-4 py-2 hover:bg-gray-700 rounded-t-lg transition">Histoire</a></li>
+                    <li><a href="regiments.html" class="px-4 py-2 hover:bg-gray-700 rounded-t-lg transition">Régiments</a></li>
+                    <li><a href="members.html" class="px-4 py-2 hover:bg-gray-700 rounded-t-lg transition">Membres</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden bg-gray-800 text-white">
+        <ul class="flex flex-col space-y-2 p-4">
+            <li><a href="index.html" class="block px-4 py-2 hover:bg-gray-700 rounded-lg">Accueil</a></li>
+            <li><a href="about.html" class="block px-4 py-2 bg-blue-700 rounded-lg">À propos</a></li>
+            <li><a href="mission.html" class="block px-4 py-2 hover:bg-gray-700 rounded-lg">Notre mission</a></li>
+            <li><a href="events.html" class="block px-4 py-2 hover:bg-gray-700 rounded-lg">Événements</a></li>
+            <li><a href="contact.html" class="block px-4 py-2 hover:bg-gray-700 rounded-lg">Contact</a></li>
+            <li><a href="membership.html" class="block px-4 py-2 hover:bg-gray-700 rounded-lg">Adhésion</a></li>
+            <li><a href="gallery.html" class="block px-4 py-2 hover:bg-gray-700 rounded-lg">Photos</a></li>
+            <li><a href="videos.html" class="block px-4 py-2 hover:bg-gray-700 rounded-lg">Vidéos</a></li>
+            <li><a href="history.html" class="block px-4 py-2 hover:bg-gray-700 rounded-lg">Histoire</a></li>
+            <li><a href="regiments.html" class="block px-4 py-2 hover:bg-gray-700 rounded-lg">Régiments</a></li>
+            <li><a href="members.html" class="block px-4 py-2 hover:bg-gray-700 rounded-lg">Membres</a></li>
+        </ul>
+    </div>
+
+    <!-- Main Content -->
+    <main class="flex-grow container mx-auto px-4 py-8">
+        <section class="mb-12 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4 text-gray-800" data-aos="fade-up">À Propos de Notre Association</h1>
+            <div class="w-24 h-1 bg-blue-600 mx-auto mb-8" data-aos="fade-up"></div>
+            <p class="text-xl text-gray-600 max-w-3xl mx-auto" data-aos="fade-up">
+                Fondée en 1985, notre association œuvre pour la reconnaissance et la solidarité entre anciens combattants de toutes origines qui ont servi la France.
+            </p>
+        </section>
+
+        <section class="mb-16 bg-white rounded-xl shadow-lg overflow-hidden" data-aos="fade-up">
+            <div class="grid md:grid-cols-2">
+                <div class="p-8 md:p-12">
+                    <h2 class="text-3xl font-bold mb-6 text-gray-800">Notre Histoire</h2>
+                    <p class="text-gray-600 mb-4">
+                        L'Association de Solidarité des Anciens Combattants Interethniques (ASCI) a été créée par un groupe d'anciens combattants issus de divers horizons, unis par leur engagement au service de la France.
+                    </p>
+                    <p class="text-gray-600 mb-6">
+                        Face au besoin de préserver la mémoire des combattants de toutes origines et de lutter contre l'oubli, ces femmes et ces hommes ont décidé de s'unir pour créer une structure capable de porter leurs valeurs communes.
+                    </p>
+                    <div class="bg-blue-50 border-l-4 border-blue-600 p-4">
+                        <p class="text-blue-800 italic">
+                            "Nous nous sommes battus côte à côte pour la France, aujourd'hui nous nous battons ensemble pour notre mémoire commune."
+                        </p>
+                        <p class="text-blue-600 font-medium mt-2">- Pierre Durand, Fondateur</p>
+                    </div>
+                </div>
+                <div class="relative">
+                    <img src="https://source.unsplash.com/random/800x600/?veterans,group" alt="Groupe d'anciens combattants" class="w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-30"></div>
+                    <div class="absolute bottom-0 left-0 p-6 text-white">
+                        <p class="text-sm">Réunion des fondateurs en 1985</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-16">
+            <h2 class="text-3xl font-bold text-center mb-12 text-gray-800" data-aos="fade-up">Notre Parcours en Dates Clés</h2>
+            <div class="relative">
+                <div class="hidden md:block absolute h-full w-0.5 bg-blue-200 left-1/2 transform -translate-x-1/2"></div>
+                
+                <div class="grid md:grid-cols-2 gap-8">
+                    <!-- Timeline Item 1 -->
+                    <div class="relative pl-8 md:pl-0 md:pr-8 timeline-item" data-aos="fade-right">
+                        <div class="bg-white p-6 rounded-lg shadow-md border-t-4 border-blue-600">
+                            <div class="flex items-center mb-2">
+                                <div class="bg-blue-100 text-blue-800 p-2 rounded-full mr-4">
+                                    <i data-feather="flag" class="w-5 h-5"></i>
+                                </div>
+                                <h3 class="font-bold text-lg">1985 - Fondation</h3>
+                            </div>
+                            <p class="text-gray-600">
+                                Création officielle de l'association par 12 anciens combattants issus de différentes unités et origines.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <!-- Empty div for spacing on md screens -->
+                    <div class="hidden md:block"></div>
+                    
+                    <!-- Timeline Item 2 -->
+                    <div class="relative pl-8 md:pl-0 md:pr-8 timeline-item" data-aos="fade-left">
+                        <div class="bg-white p-6 rounded-lg shadow-md border-t-4 border-blue-600 md:text-right">
+                            <div class="flex items-center mb-2 md:justify-end">
+                                <div class="bg-blue-100 text-blue-800 p-2 rounded-full mr-4">
+                                    <i data-feather="home" class="w-5 h-5"></i>
+                                </div>
+                                <h3 class="font-bold text-lg">1992 - Premier Siège</h3>
+                            </div>
+                            <p class="text-gray-600">
+                                Acquisition de notre premier local associatif à Paris, permettant d'accueillir les membres et d'organiser des activités.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <!-- Timeline Item 3 -->
+                    <div class="relative pl-8 md:pl-0 md:pr-8 timeline-item" data-aos="fade-right">
+                        <div class="bg-white p-6 rounded-lg shadow-md border-t-4 border-blue-600">
+                            <div class="flex items-center mb-2">
+                                <div class="bg-blue-100 text-blue-800 p-2 rounded-full mr-4">
+                                    <i data-feather="book" class="w-5 h-5"></i>
+                                </div>
+                                <h3 class="font-bold text-lg">2001 - Premier Livre</h3>
+                            </div>
+                            <p class="text-gray-600">
+                                Publication de "Mémoires Croisées", recueil de témoignages d'anciens combattants de différentes origines.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <!-- Empty div for spacing on md screens -->
+                    <div class="hidden md:block"></div>
+                    
+                    <!-- Timeline Item 4 -->
+                    <div class="relative pl-8 md:pl-0 md:pr-8 timeline-item" data-aos="fade-left">
+                        <div class="bg-white p-6 rounded-lg shadow-md border-t-4 border-blue-600 md:text-right">
+                            <div class="flex items-center mb-2 md:justify-end">
+                                <div class="bg-blue-100 text-blue-800 p-2 rounded-full mr-4">
+                                    <i data-feather="award" class="w-5 h-5"></i>
+                                </div>
+                                <h3 class="font-bold text-lg">2010 - Reconnaissance</h3>
+                            </div>
+                            <p class="text-gray-600">
+                                L'association reçoit la médaille de la Ville de Paris pour son travail de mémoire et d'intégration.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <!-- Timeline Item 5 -->
+                    <div class="relative pl-8 md:pl-0 md:pr-8 timeline-item" data-aos="fade-right">
+                        <div class="bg-white p-6 rounded-lg shadow-md border-t-4 border-blue-600">
+                            <div class="flex items-center mb-2">
+                                <div class="bg-blue-100 text-blue-800 p-2 rounded-full mr-4">
+                                    <i data-feather="users" class="w-5 h-5"></i>
+                                </div>
+                                <h3 class="font-bold text-lg">2020 - 2000 Membres</h3>
+                            </div>
+                            <p class="text-gray-600">
+                                L'ASCI franchit le cap des 2000 membres actifs, devenant la plus grande association interethnique du genre.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-16 bg-blue-50 rounded-xl p-8" data-aos="fade-up">
+            <h2 class="text-3xl font-bold text-center mb-8 text-gray-800">Nos Valeurs Fondamentales</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                    <div class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i data-feather="heart" class="text-blue-600 w-8 h-8"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Solidarité</h3>
+                    <p class="text-gray-600">
+                        Soutien mutuel entre anciens combattants et leurs familles, sans distinction d'origine ou de religion.
+                    </p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                    <div class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i data-feather="book-open" class="text-blue-600 w-8 h-8"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Mémoire</h3>
+                    <p class="text-gray-600">
+                        Transmission de l'histoire et des sacrifices des combattants de toutes origines aux jeunes générations.
+                    </p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                    <div class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i data-feather="star" class="text-blue-600 w-8 h-8"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Reconnaissance</h3>
+                    <p class="text-gray-600">
+                        Valorisation de l'apport de tous les combattants à l'histoire de France, quelle que soit leur origine.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-16" data-aos="fade-up">
+            <h2 class="text-3xl font-bold text-center mb-8 text-gray-800">Notre Conseil d'Administration</h2>
+            <div class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                <div class="bg-white rounded-lg shadow-md overflow-hidden text-center">
+                    <img src="https://source.unsplash.com/random/400x400/?portrait,veteran,man" alt="Président" class="w-full h-64 object-cover">
+                    <div class="p-4">
+                        <h3 class="font-bold text-lg">Pierre Durand</h3>
+                        <p class="text-blue-600 mb-2">Président</p>
+                        <p class="text-gray-600 text-sm">Ancien officier de la Légion Étrangère</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-md overflow-hidden text-center">
+                    <img src="https://source.unsplash.com/random/400x400/?portrait,veteran,woman" alt="Vice-présidente" class="w-full h-64 object-cover">
+                    <div class="p-4">
+                        <h3 class="font-bold text-lg">Aïssata Diop</h3>
+                        <p class="text-blue-600 mb-2">Vice-présidente</p>
+                        <p class="text-gray-600 text-sm">Ancienne infirmière militaire</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-md overflow-hidden text-center">
+                    <img src="https://source.unsplash.com/random/400x400/?portrait,veteran,man,elderly" alt="Trésorier" class="w-full h-64 object-cover">
+                    <div class="p-4">
+                        <h3 class="font-bold text-lg">Jacques Lefèvre</h3>
+                        <p class="text-blue-600 mb-2">Trésorier</p>
+                        <p class="text-gray-600 text-sm">Ancien du 1er RCP</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-md overflow-hidden text-center">
+                    <img src="https://source.unsplash.com/random/400x400/?portrait,veteran,man,middleaged" alt="Secrétaire général" class="w-full h-64 object-cover">
+                    <div class="p-4">
+                        <h3 class="font-bold text-lg">Mehdi Benali</h3>
+                        <p class="text-blue-600 mb-2">Secrétaire général</p>
+                        <p class="text-gray-600 text-sm">Ancien du 3e RIMa</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="h-1/5 min-h-[200px] bg-gray-900 text-white py-8">
+        <div class="container mx-auto px-4 h-full">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Association ASCI</h3>
+                    <p class="text-gray-400">Solidarité, Mémoire, Reconnaissance depuis 1985.</p>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Navigation</h4>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-400 hover:text-white transition">Accueil</a></li>
+                        <li><a href="about.html" class="text-gray-400 hover:text-white transition">À propos</a></li>
+                        <li><a href="events.html" class="text-gray-400 hover:text-white transition">Événements</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-white transition">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Contact</h4>
+                    <address class="not-italic text-gray-400">
+                        <p>12 Rue des Combattants</p>
+                        <p>75015 Paris, France</p>
+                        <p class="mt-2">Tél: +33 1 45 67 89 10</p>
+                        <p>Email: contact@anciens-combattants.fr</p>
+                    </address>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Suivez-nous</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition" aria-label="Facebook">
+                            <i data-feather="facebook"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition" aria-label="Twitter">
+                            <i data-feather="twitter"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition" aria-label="Instagram">
+                            <i data-feather="instagram"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition" aria-label="YouTube">
+                            <i data-feather="youtube"></i>
+                        </a>
+                    </div>
+                    <div class="mt-4">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.9916256937595!2d2.292292615509614!3d48.858370079287475!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e2964e34e2d%3A0x8ddca9ee380ef7e0!2sTour%20Eiffel!5e0!3m2!1sfr!2sfr!4v1623251234567!5m2!1sfr!2sfr" width="100%" height="150" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-6 text-center text-gray-500 text-sm">
+                <p>© 2023 Association de Solidarité des Anciens Combattants Interethniques. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true
+        });
+        feather.replace();
+        
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
